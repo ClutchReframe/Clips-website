@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for ClutchReframe Clips, a League of Legends highlight auto-clipper built on Overwolf.">
+    <meta name="theme-color" content="#05050d">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms of Service — ClutchReframe Clips">
+    <meta property="og:description" content="Terms of Service for ClutchReframe Clips. Use the app responsibly and within Riot Games' policies.">
+    <meta property="og:url" content="https://clips.clutchreframe.com/terms.html">
+    <meta property="og:image" content="https://clips.clutchreframe.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ClutchReframe Clips">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terms of Service — ClutchReframe Clips">
+    <meta name="twitter:description" content="Terms of Service for ClutchReframe Clips.">
+    <meta name="twitter:image" content="https://clips.clutchreframe.com/og-image.png">
+
+    <title>Terms of Service — ClutchReframe Clips</title>
+    <link rel="canonical" href="https://clips.clutchreframe.com/terms.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --cyan: #00d9ff;
+            --purple: #7c3aed;
+            --bg: #05050d;
+            --text: #e2e8f0;
+            --muted: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            padding: 60px 24px 80px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Nav bar */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 56px;
+        }
+
+        .nav-brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-back {
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-back:hover { color: var(--cyan); }
+
+        /* Page header */
+        .page-header {
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .page-header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header .updated {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        /* Content */
+        .content h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin: 2.4rem 0 0.7rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        .content p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong { color: #e2e8f0; }
+
+        .content ul {
+            list-style: none;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .content ul li {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            padding: 0.35rem 0 0.35rem 1.4rem;
+            position: relative;
+        }
+
+        .content ul li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--cyan);
+            opacity: 0.6;
+        }
+
+        .content a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        .content a:hover { text-decoration: underline; }
+
+        /* Disclaimer box */
+        .disclaimer-box {
+            margin-top: 2.4rem;
+            padding: 20px 24px;
+            background: rgba(0, 217, 255, 0.04);
+            border: 1px solid rgba(0, 217, 255, 0.15);
+            border-left: 3px solid var(--cyan);
+            border-radius: 10px;
+            font-size: 0.88rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .page-footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            font-size: 0.8rem;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .page-footer a {
+            color: #475569;
+            text-decoration: none;
+        }
+
+        .page-footer a:hover { color: var(--cyan); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Nav -->
+    <nav class="nav">
+        <a href="index.html" class="nav-brand">ClutchReframe Clips</a>
+        <a href="index.html" class="nav-back">← Back to Home</a>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Terms of Service</h1>
+        <p class="updated">Last Updated: February 23, 2026</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Acceptance of Terms</h2>
+        <p>By installing or using ClutchReframe Clips ("the App"), you agree to be bound by these Terms of Service. If you do not agree, please uninstall and discontinue use of the App.</p>
+
+        <h2>Description of Service</h2>
+        <p>ClutchReframe Clips is a League of Legends highlight capture and vertical video clipping tool built on the Overwolf platform. It automatically detects combat events, records highlights, and enables one-click export as 9:16 vertical videos. All processing occurs locally on your machine.</p>
+
+        <h2>Permitted Use</h2>
+        <p>You may use ClutchReframe Clips for personal, non-commercial capture and sharing of your own gameplay highlights. Permitted uses include:</p>
+        <ul>
+            <li>Recording and sharing your own gameplay on social media platforms</li>
+            <li>Creating highlight videos for personal content creation</li>
+            <li>Using the App in conjunction with your legitimate Riot Games account</li>
+        </ul>
+
+        <h2>Prohibited Use</h2>
+        <p>You agree not to use ClutchReframe Clips to:</p>
+        <ul>
+            <li>Gain any unfair competitive advantage in League of Legends or any other game</li>
+            <li>Violate Riot Games' Terms of Service or any applicable policies</li>
+            <li>Record, capture, or distribute other players' gameplay without their consent where prohibited by applicable law</li>
+            <li>Reverse-engineer, decompile, or modify the App</li>
+            <li>Use the App for any unlawful purpose</li>
+        </ul>
+
+        <h2>Overwolf Platform</h2>
+        <p>ClutchReframe Clips operates on the Overwolf platform. Your use of the App is also subject to <a href="https://www.overwolf.com/legal/terms" target="_blank" rel="noopener">Overwolf's Terms of Service</a>. Please review Overwolf's policies before use.</p>
+
+        <h2>Riot Games Compliance</h2>
+        <p>ClutchReframe Clips is designed to comply with Riot Games' third-party application policies. The App does not:</p>
+        <ul>
+            <li>Read or transmit in-memory game data beyond what Overwolf GEP provides</li>
+            <li>Provide competitive advantages such as ability timers, cooldown tracking, or map information beyond what is visible on screen</li>
+            <li>Automate any in-game actions or inputs</li>
+        </ul>
+
+        <h2>Intellectual Property</h2>
+        <p>ClutchReframe Clips and its original code are the intellectual property of ClutchReframe. League of Legends, Riot Games, and all associated marks are trademarks of Riot Games, Inc. We claim no ownership of Riot Games' intellectual property.</p>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" and "as available" without warranties of any kind, express or implied. We do not warrant that the App will be uninterrupted, error-free, or compatible with all system configurations.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, ClutchReframe shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>We reserve the right to update these Terms of Service at any time. Continued use of the App after changes constitutes acceptance of the revised Terms.</p>
+
+        <h2>Contact</h2>
+        <p>For questions about these Terms, please contact us at: <a href="mailto:jintian127@gmail.com">jintian127@gmail.com</a></p>
+
+        <div class="disclaimer-box">
+            <strong>Riot Games Disclaimer</strong><br><br>
+            ClutchReframe Clips is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, League of Legends, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="page-footer">
+        <span>© 2026 ClutchReframe. All rights reserved.</span>
+        <span>
+            <a href="privacy.html">Privacy Policy</a>
+            &nbsp;·&nbsp;
+            <a href="terms.html">Terms of Service</a>
+        </span>
+    </div>
+</div>
+
+</body>
+</html>
