@@ -1,4 +1,4 @@
-# ClutchReframe Clips — 项目开发指南
+# ClutchReframe Clips | 项目开发指南
 
 ## 项目概述
 
@@ -52,7 +52,7 @@
 
 - **产品名：** ClutchReframe Clips
 - **一句话描述：** Your clutch moments, ready to post.
-- **联系邮箱：** jintian127@gmail.com
+- **联系邮箱：** jintian138138@gmail.com
 - **平台：** Overwolf
 - **游戏：** League of Legends
 
