@@ -37,8 +37,11 @@
             --cyan: #00d9ff;
             --purple: #7c3aed;
             --bg: #05050d;
+            --border: rgba(255, 255, 255, 0.06);
             --text: #e2e8f0;
-            --muted: #64748b;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --nav-height: 72px;
         }
 
         body {
@@ -46,43 +49,65 @@
             background: var(--bg);
             color: var(--text);
             line-height: 1.75;
-            padding: 60px 24px 80px;
         }
 
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        /* Nav bar */
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 56px;
-        }
-
-        .nav-brand {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            font-size: 1.05rem;
-            text-decoration: none;
+        .gradient-text {
             background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
+        /* ── NAVBAR ── */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 100;
+            background: rgba(5, 5, 13, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: relative;
+        }
+
+        .nav-logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            z-index: 2;
+        }
+
         .nav-back {
             font-size: 0.85rem;
-            color: var(--muted);
+            color: var(--text-muted);
             text-decoration: none;
             transition: color 0.2s;
         }
 
         .nav-back:hover { color: var(--cyan); }
 
-        /* Page header */
+        /* ── Page Layout ── */
+        .page-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: calc(var(--nav-height) + 48px) 24px 80px;
+        }
+
         .page-header {
             margin-bottom: 48px;
             padding-bottom: 32px;
@@ -102,10 +127,10 @@
 
         .page-header .updated {
             font-size: 0.85rem;
-            color: var(--muted);
+            color: var(--text-muted);
         }
 
-        /* Content */
+        /* ── Content ── */
         .content h2 {
             font-family: 'Outfit', sans-serif;
             font-size: 1.2rem;
@@ -124,11 +149,11 @@
 
         .content p {
             font-size: 0.95rem;
-            color: #94a3b8;
+            color: var(--text-secondary);
             margin-bottom: 0.8rem;
         }
 
-        .content strong { color: #e2e8f0; }
+        .content strong { color: var(--text); }
 
         .content ul {
             list-style: none;
@@ -137,7 +162,7 @@
 
         .content ul li {
             font-size: 0.95rem;
-            color: #94a3b8;
+            color: var(--text-secondary);
             padding: 0.35rem 0 0.35rem 1.4rem;
             position: relative;
         }
@@ -157,7 +182,7 @@
 
         .content a:hover { text-decoration: underline; }
 
-        /* Disclaimer box */
+        /* ── Disclaimer box ── */
         .disclaimer-box {
             margin-top: 2.4rem;
             padding: 20px 24px;
@@ -166,17 +191,17 @@
             border-left: 3px solid var(--cyan);
             border-radius: 10px;
             font-size: 0.88rem;
-            color: #64748b;
+            color: var(--text-muted);
             line-height: 1.7;
         }
 
-        /* Footer */
+        /* ── Page Footer ── */
         .page-footer {
             margin-top: 56px;
             padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-top: 1px solid var(--border);
             font-size: 0.8rem;
-            color: #64748b;
+            color: var(--text-muted);
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -184,7 +209,7 @@
         }
 
         .page-footer a {
-            color: #475569;
+            color: var(--text-muted);
             text-decoration: none;
         }
 
@@ -193,13 +218,17 @@
 </head>
 <body>
 
-<div class="container">
-    <!-- Nav -->
-    <nav class="nav">
-        <a href="index.html" class="nav-brand">ClutchReframe Clips</a>
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <span class="gradient-text">ClutchReframe</span> Clips
+        </a>
         <a href="index.html" class="nav-back">← Back to Home</a>
-    </nav>
+    </div>
+</nav>
 
+<div class="page-container">
     <!-- Page Header -->
     <div class="page-header">
         <h1>Terms of Service</h1>
