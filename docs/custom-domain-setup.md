@@ -1,3 +1,11 @@
+# 本地访问测试网站
+
+cd C:\Dev\Clips-website
+python -m http.server 8080
+
+然后访问 http://localhost:8080
+
+
 # 自定义域名绑定指南
 
 将 `clips.clutchreframe.com` 绑定到 GitHub Pages 的完整操作步骤。
