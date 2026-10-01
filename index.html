@@ -677,6 +677,29 @@
 
         .footer-col a:hover { color: var(--cyan); }
 
+        .email-contact {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            padding: 5px 0;
+        }
+
+        .email-address { overflow-wrap: anywhere; }
+
+        .copy-email {
+            margin-left: 6px;
+            padding: 2px 8px;
+            min-height: 28px;
+            border: 1px solid var(--text-muted);
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-secondary);
+            font: inherit;
+            cursor: pointer;
+        }
+
+        .copy-email:hover { color: var(--cyan); }
+        .copy-email:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
         .footer-divider {
             height: 1px;
             background: var(--border);
@@ -773,6 +796,7 @@
             .video-section { padding: 80px 20px; }
         }
     </style>
+    <script src="copy-email.js" defer></script>
 </head>
 <body>
 
@@ -1009,7 +1033,11 @@
                 <a href="#how-it-works">How It Works</a>
                 <a href="#compliance">Compliance</a>
                 <a href="#faq">FAQ</a>
-                <a href="mailto:clutchreframe@gmail.com">Contact</a>
+                <div class="email-contact">
+                    <span class="email-address" id="contact-email">clutchreframe@gmail.com</span>
+                    <button class="copy-email" id="copy-email" type="button" aria-label="Copy email address" hidden>Copy</button>
+                    <span id="copy-email-status" role="status"></span>
+                </div>
             </div>
 
             <div class="footer-col">
