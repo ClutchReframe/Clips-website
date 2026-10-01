@@ -184,21 +184,6 @@
 
         .email-address { overflow-wrap: anywhere; }
 
-        .copy-email {
-            margin-left: 6px;
-            padding: 2px 8px;
-            min-height: 28px;
-            border: 1px solid var(--text-muted);
-            border-radius: 4px;
-            background: transparent;
-            color: var(--text-secondary);
-            font: inherit;
-            cursor: pointer;
-        }
-
-        .copy-email:hover { color: var(--cyan); }
-        .copy-email:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
-
         /* ── Disclaimer box ── */
         .disclaimer-box {
             margin-top: 2.4rem;
@@ -232,7 +217,6 @@
 
         .page-footer a:hover { color: var(--cyan); }
     </style>
-    <script src="copy-email.js" defer></script>
 </head>
 <body>
 
@@ -297,11 +281,7 @@
         <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated "Last Updated" date.</p>
 
         <h2>Contact</h2>
-        <p>For questions about this Privacy Policy, please contact us at:
-            <span class="email-address" id="contact-email">clutchreframe@gmail.com</span>
-            <button class="copy-email" id="copy-email" type="button" aria-label="Copy email address" hidden>Copy</button>
-            <span id="copy-email-status" role="status"></span>
-        </p>
+        <p>For questions about this Privacy Policy, please contact us at: <span class="email-address">clutchreframe@gmail.com</span></p>
 
         <div class="disclaimer-box">
             <strong>Riot Games Disclaimer</strong><br><br>
